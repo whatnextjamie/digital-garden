@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# generated content graph
+/public/content-graph.json
+
 # production
 /build
 

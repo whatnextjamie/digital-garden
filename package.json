@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "build:graph": "tsx scripts/build-content-graph.ts",
+    "prebuild": "pnpm run build:graph",
+    "dev": "pnpm run build:graph && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -14,13 +16,14 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
-    "tailwindcss": "^4",
+    "glob": "^13.0.0",
+    "prettier": "3.8.0",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

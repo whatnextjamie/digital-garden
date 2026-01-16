@@ -1,0 +1,16 @@
+.link {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.broken {
+  color: var(--color-warning);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  cursor: help;
+}
