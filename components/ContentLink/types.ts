@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 export interface ContentLinkProps {
-  to: string
-  children: ReactNode
+  to: string;
+  children: ReactNode;
 }

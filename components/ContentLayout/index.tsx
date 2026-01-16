@@ -1,11 +1,11 @@
-import { BacklinksList } from '@/components/BacklinksList'
-import { PageLayout, BackLink, Topic } from '@/components'
-import { getContent } from '@/lib/content-graph'
-import styles from './styles.module.css'
-import type { ContentLayoutProps } from './types'
+import { BacklinksList } from "@/components/BacklinksList";
+import { PageLayout, BackLink, Topic } from "@/components";
+import { getContent } from "@/lib/content-graph";
+import styles from "./styles.module.css";
+import type { ContentLayoutProps } from "./types";
 
 export function ContentLayout({ contentId, children }: ContentLayoutProps) {
-  const content = getContent(contentId)
+  const content = getContent(contentId);
 
   return (
     <PageLayout>
@@ -15,7 +15,7 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
         <header className={styles.header}>
           {content.topics.length > 0 && (
             <div className={styles.topics}>
-              {content.topics.map(topic => (
+              {content.topics.map((topic) => (
                 <Topic key={topic}>{topic}</Topic>
               ))}
             </div>
@@ -24,11 +24,9 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
         </header>
       )}
 
-      <main className={styles.prose}>
-        {children}
-      </main>
+      <main className={styles.prose}>{children}</main>
 
       <BacklinksList contentId={contentId} />
     </PageLayout>
-  )
+  );
 }

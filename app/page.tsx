@@ -1,3 +1,3 @@
-import { PageLayout } from '@/components'
+import { PageLayout } from "@/components";
 
 export default function Home() {}

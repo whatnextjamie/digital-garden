@@ -1,3 +1,3 @@
 export interface BacklinksListProps {
-  contentId: string
+  contentId: string;
 }

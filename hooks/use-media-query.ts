@@ -1,27 +1,27 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 export function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false)
+  const [matches, setMatches] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(query)
-    setMatches(mediaQuery.matches)
+    const mediaQuery = window.matchMedia(query);
+    setMatches(mediaQuery.matches);
 
     const handler = (event: MediaQueryListEvent) => {
-      setMatches(event.matches)
-    }
+      setMatches(event.matches);
+    };
 
-    mediaQuery.addEventListener('change', handler)
-    return () => mediaQuery.removeEventListener('change', handler)
-  }, [query])
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, [query]);
 
-  return matches
+  return matches;
 }
 
 export function useIsMobile(): boolean {
-  return useMediaQuery('(max-width: 768px)')
+  return useMediaQuery("(max-width: 768px)");
 }
 
 export function usePrefersDark(): boolean {
-  return useMediaQuery('(prefers-color-scheme: dark)')
+  return useMediaQuery("(prefers-color-scheme: dark)");
 }

@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 export interface ContentLayoutProps {
-  contentId: string
-  children: ReactNode
+  contentId: string;
+  children: ReactNode;
 }
