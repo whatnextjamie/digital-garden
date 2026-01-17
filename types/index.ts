@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ContentType = {
   Note: "note",
   CaseStudy: "case-study",

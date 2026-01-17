@@ -5,4 +5,4 @@ export { ContentLink } from "./ContentLink";
 export { ContentList } from "./ContentList";
 export { PageLayout } from "./PageLayout";
 export { Topic } from "./Topic";
-export { Typography } from "./Typography";
+export { Typography, TypographyVariant, TypographyElement } from "./Typography";

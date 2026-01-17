@@ -1,18 +1,7 @@
 import styles from "./styles.module.css";
-import type { TypographyProps, TypographyVariant, TypographyElement } from "./types";
-
-const defaultElements: Record<TypographyVariant, TypographyElement> = {
-  display: "h1",
-  h1: "h1",
-  h2: "h2",
-  h3: "h3",
-  subtitle: "p",
-  label: "span",
-  body: "p",
-  lead: "p",
-  small: "small",
-  quote: "blockquote",
-};
+import type { TypographyProps } from "./types";
+import { defaultElements } from "./types";
+export { TypographyVariant, TypographyElement } from "./types";
 
 export function Typography({
   children,

@@ -1,4 +1,4 @@
-import { Typography, ContentLayout, ContentLink } from "@/components";
+import { Typography, TypographyVariant, ContentLayout, ContentLink } from "@/components";
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
@@ -21,7 +21,7 @@ export const contentMetadata = {
 export default function ContentItem3() {
   return (
     <ContentLayout contentId="content-item-3">
-      <Typography variant="h1">Content Item 3</Typography>
+      <Typography variant={TypographyVariant.H1}>Content Item 3</Typography>
       <div>
         <ContentLink to="content-item-1">Content Item 1</ContentLink>
       </div>
@@ -35,7 +35,7 @@ export default function ContentItem3() {
         <ContentLink to="doesnt-exist">Content Item Doesn't Exist</ContentLink>
       </div>
 
-      <Typography variant="body">
+      <Typography variant={TypographyVariant.Body}>
         The modern creative landscape demands more than talent alone — it
         thrives on curiosity and persistence. Every project, big or small,
         benefits from an iterative approach where ideas are tested, refined, and

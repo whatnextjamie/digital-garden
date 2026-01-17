@@ -3,7 +3,7 @@ import {
   getContentGraph,
   Topic as TopicType,
 } from "@/lib/content-graph";
-import { PageLayout, Typography, Topic, ContentList } from "@/components";
+import { PageLayout, Typography, TypographyVariant, Topic, ContentList } from "@/components";
 import styles from "./page.module.css";
 
 export default function GardenPage() {
@@ -14,22 +14,22 @@ export default function GardenPage() {
   return (
     <PageLayout>
       <header className={styles.header}>
-        <Typography variant="h1" className={styles.title}>
+        <Typography variant={TypographyVariant.H1} className={styles.title}>
           Garden
         </Typography>
-        <Typography variant="subtitle">
+        <Typography variant={TypographyVariant.Subtitle}>
           A collection of interconnected notes and ideas. Click any item to
           explore, and follow the links to discover connections.
         </Typography>
       </header>
 
       <section className={styles.section}>
-        <Typography variant="label">All Content</Typography>
+        <Typography variant={TypographyVariant.Label}>All Content</Typography>
         <ContentList items={content} showTopics />
       </section>
 
       <section>
-        <Typography variant="label">Topics</Typography>
+        <Typography variant={TypographyVariant.Label}>Topics</Typography>
         <div className={styles.topicsList}>
           {allTopics.map((topic) => (
             <Topic key={topic} href={`/topics/${topic}`} size="md">

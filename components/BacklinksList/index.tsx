@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getBacklinks } from "@/lib/content-graph";
 import styles from "./styles.module.css";
 import type { BacklinksListProps } from "./types";
-import { Typography } from "../Typography";
+import { Typography, TypographyVariant } from "../Typography";
 
 export function BacklinksList({ contentId }: BacklinksListProps) {
   const backlinks = getBacklinks(contentId);
@@ -13,7 +13,7 @@ export function BacklinksList({ contentId }: BacklinksListProps) {
 
   return (
     <aside className={styles.aside}>
-      <Typography variant="label">Linked from</Typography>
+      <Typography variant={TypographyVariant.Label}>Linked from</Typography>
       <ul className={styles.list}>
         {backlinks.map((content) => (
           <li key={content.id}>
@@ -21,7 +21,7 @@ export function BacklinksList({ contentId }: BacklinksListProps) {
               {content.title}
             </Link>
             {content.description && (
-              <Typography variant="body" className={styles.description}>
+              <Typography variant={TypographyVariant.Body} className={styles.description}>
                 {content.description}
               </Typography>
             )}

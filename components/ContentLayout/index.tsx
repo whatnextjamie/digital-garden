@@ -1,5 +1,5 @@
 import { BacklinksList } from "@/components/BacklinksList";
-import { PageLayout, BackLink, Topic } from "@/components";
+import { PageLayout, BackLink, Topic, Typography, TypographyVariant } from "@/components";
 import { getContent } from "@/lib/content-graph";
 import styles from "./styles.module.css";
 import type { ContentLayoutProps } from "./types";
@@ -20,7 +20,9 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
               ))}
             </div>
           )}
-          <p className={styles.updated}>Updated {content.updated}</p>
+          <Typography variant={TypographyVariant.Body} className={styles.updated}>
+            Updated {content.updated}
+          </Typography>
         </header>
       )}
 
