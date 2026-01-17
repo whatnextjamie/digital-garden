@@ -1,4 +1,9 @@
-import { Typography, TypographyVariant, ContentLayout, ContentLink } from "@/components";
+import {
+  Typography,
+  TypographyVariant,
+  ContentLayout,
+  ContentLink,
+} from "@/components";
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
@@ -21,7 +26,6 @@ export const contentMetadata = {
 export default function ContentItem3() {
   return (
     <ContentLayout contentId="content-item-3">
-      <Typography variant={TypographyVariant.H1}>Content Item 3</Typography>
       <div>
         <ContentLink to="content-item-1">Content Item 1</ContentLink>
       </div>
