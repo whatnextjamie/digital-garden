@@ -3,12 +3,11 @@
 }
 
 .link {
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
   color: var(--color-text-muted);
-  text-decoration: none;
-  transition: color 0.15s;
+  transition: color var(--transition-fast);
 }
 
 .link:hover {
-  color: var(--color-text);
+  color: var(--color-link-hover);
 }

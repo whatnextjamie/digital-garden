@@ -1,3 +1,5 @@
+import React from "react";
+
 export const ContentType = {
   Note: "note",
   CaseStudy: "case-study",
@@ -8,9 +10,25 @@ export const ContentType = {
 export type ContentType = (typeof ContentType)[keyof typeof ContentType];
 
 export const Topic = {
-  Meta: "Meta",
-  Architecture: "Architecture",
-  NextJs: "Next.js",
+  AITrust: "AI Trust",
+  AIUXPatterns: "AI UX Patterns",
+  DevTools: "Dev Tools",
+  DesignSystems: "Design Systems",
+  IntentShift: "Intent Shift",
+  CostAwareAIUX: "Cost-Aware AI UX",
+  Claude: "Claude",
+  Dashboards: "Dashboards",
+  DeveloperExperience: "Developer Experience",
+  Documentation: "Documentation",
+  GenerativeAI: "Generative AI",
+  LLMs: "LLMs",
+  ModelEvaluation: "Model Evaluation",
+  MultimodalAI: "Multimodal AI",
+  PromptEngineering: "Prompt Engineering",
+  ResponsibleAI: "Responsible AI",
+  TokenArchitecture: "Token Architecture",
+  ReactComponents: "React Components",
+  ModernCSS: "Modern CSS",
 } as const;
 
 export type Topic = (typeof Topic)[keyof typeof Topic];

@@ -3,19 +3,18 @@
   padding: var(--space-1) var(--space-2);
   background: var(--color-bg-secondary);
   color: var(--color-text-secondary);
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
 }
 
-.topic.md {
-  font-size: 0.875rem;
+.md {
+  font-size: var(--font-size-sm);
 }
 
-.topic.link {
-  text-decoration: none;
-  transition: background-color 0.15s;
+.link {
+  transition: background-color var(--transition-fast);
 }
 
-.topic.link:hover {
+.link:hover {
   background: var(--color-bg-tertiary);
 }

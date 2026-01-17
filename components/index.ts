@@ -1,9 +1,8 @@
 export { BackLink } from "./BackLink";
 export { BacklinksList } from "./BacklinksList";
-export { Container } from "./Container";
 export { ContentLayout } from "./ContentLayout";
 export { ContentLink } from "./ContentLink";
 export { ContentList } from "./ContentList";
 export { PageLayout } from "./PageLayout";
-export { SectionHeader } from "./SectionHeader";
 export { Topic } from "./Topic";
+export { Typography } from "./Typography";

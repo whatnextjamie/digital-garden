@@ -2,12 +2,6 @@
   margin-bottom: var(--space-12);
 }
 
-.title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
 .count {
   color: var(--color-text-secondary);
   margin-top: var(--space-2);

@@ -7,7 +7,7 @@ export function BackLink({
   children = "← Back to garden",
 }: BackLinkProps) {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} aria-label="Back navigation">
       <Link href={href} className={styles.link}>
         {children}
       </Link>
