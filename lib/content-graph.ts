@@ -46,3 +46,12 @@ export function getContent(contentId: string): ContentMetadata | undefined {
   const graph = getContentGraph();
   return graph.content[contentId];
 }
+
+export function getFeaturedContent(): ContentMetadata[] {
+  const graph = getContentGraph();
+  return Object.values(graph.content)
+    .filter((content) => content.isFeatured === true)
+    .sort(
+      (a, b) => new Date(b.updated).getTime() - new Date(a.updated).getTime(),
+    );
+}

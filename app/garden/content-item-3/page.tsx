@@ -21,6 +21,7 @@ export const contentMetadata = {
   ],
   links: ["content-item-1", "content-item-2", "content-item-4"],
   description: "A temporary page for testing content layout.",
+  isFeatured: true,
 };
 
 export default function ContentItem3() {

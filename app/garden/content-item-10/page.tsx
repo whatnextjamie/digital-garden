@@ -1,8 +1,4 @@
-import {
-  Typography,
-  TypographyVariant,
-  ContentLayout,
-} from "@/components";
+import { Typography, TypographyVariant, ContentLayout } from "@/components";
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {

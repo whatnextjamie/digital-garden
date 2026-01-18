@@ -15,6 +15,7 @@ export const contentMetadata = {
   topics: [Topic.CostAwareAIUX, Topic.ResponsibleAI, Topic.GenerativeAI],
   links: ["content-item-1", "content-item-3", "content-item-4"],
   description: "A temporary page for testing content layout.",
+  isFeatured: true,
 };
 
 export default function ContentItem2() {

@@ -55,6 +55,8 @@ async function buildContentGraph() {
         links: metadata.links || [],
         description: metadata.description,
         path: urlPath,
+        ...(metadata.image && { image: metadata.image }),
+        ...(metadata.isFeatured && { isFeatured: metadata.isFeatured }),
       };
 
       if (!backlinks[metadata.id]) {

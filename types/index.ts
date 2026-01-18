@@ -42,6 +42,7 @@ export interface ContentMetadata {
   description?: string;
   image?: string;
   path: string;
+  isFeatured?: boolean;
 }
 
 export interface ContentGraph {

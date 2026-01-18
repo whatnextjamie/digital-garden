@@ -1,8 +1,4 @@
-import {
-  Typography,
-  TypographyVariant,
-  ContentLayout,
-} from "@/components";
+import { Typography, TypographyVariant, ContentLayout } from "@/components";
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
@@ -15,6 +11,7 @@ export const contentMetadata = {
   links: ["content-item-1", "content-item-6"],
   description:
     "Exploring the foundations of user trust when interacting with AI-powered interfaces and how design choices impact perception of reliability.",
+  isFeatured: true,
 };
 
 export default function ContentItem5() {
@@ -22,9 +19,9 @@ export default function ContentItem5() {
     <ContentLayout contentId="content-item-5">
       <Typography variant={TypographyVariant.Body}>
         Trust in AI systems is built through consistent, predictable behavior
-        and transparent communication about capabilities and limitations.
-        When users understand what an AI can and cannot do, they form more
-        accurate mental models that lead to better outcomes.
+        and transparent communication about capabilities and limitations. When
+        users understand what an AI can and cannot do, they form more accurate
+        mental models that lead to better outcomes.
       </Typography>
     </ContentLayout>
   );
