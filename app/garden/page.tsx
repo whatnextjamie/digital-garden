@@ -1,11 +1,6 @@
 import { getRecentContent, getContentGraph } from "@/lib/content-graph";
-import {
-  PageLayout,
-  Typography,
-  TypographyVariant,
-  TopicList,
-  ContentList,
-} from "@/components";
+import { PageLayout, Typography, TypographyVariant } from "@/components";
+import { FilterableGarden } from "./FilterableGarden";
 import styles from "./page.module.css";
 
 export default function GardenPage() {
@@ -25,20 +20,7 @@ export default function GardenPage() {
         </Typography>
       </header>
 
-      <section className={styles.section}>
-        <Typography variant={TypographyVariant.Label}>Topics</Typography>
-        <TopicList
-          topics={allTopics}
-          size="md"
-          linked
-          className={styles.topicsList}
-        />
-      </section>
-
-      <section className={styles.section}>
-        <Typography variant={TypographyVariant.Label}>All Content</Typography>
-        <ContentList items={content} />
-      </section>
+      <FilterableGarden topics={allTopics} content={content} />
     </PageLayout>
   );
 }

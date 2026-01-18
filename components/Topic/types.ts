@@ -4,4 +4,6 @@ export interface TopicProps {
   children: ReactNode;
   href?: string;
   size?: "sm" | "md";
+  selected?: boolean;
+  onClick?: () => void;
 }

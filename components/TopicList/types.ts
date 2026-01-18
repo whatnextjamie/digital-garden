@@ -4,4 +4,6 @@ export interface TopicListProps {
   linked?: boolean;
   limit?: number;
   className?: string;
+  selectedTopic?: string | null;
+  onTopicClick?: (topic: string) => void;
 }
