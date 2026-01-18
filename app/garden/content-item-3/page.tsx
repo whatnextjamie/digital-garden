@@ -9,7 +9,7 @@ import { ContentType, Topic } from "@/types";
 export const contentMetadata = {
   id: "content-item-3",
   title: "Content Item 3",
-  type: ContentType.Note,
+  type: ContentType.CaseStudy,
   created: "01-09-2025",
   updated: "01-16-2026",
   topics: [

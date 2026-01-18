@@ -1,5 +1,5 @@
-import type { ContentItemProps } from "../ContentItem/types";
+import type { ContentMetadata } from "@/types";
 
 export interface ContentListProps {
-  items: ContentItemProps[];
+  items: ContentMetadata[];
 }

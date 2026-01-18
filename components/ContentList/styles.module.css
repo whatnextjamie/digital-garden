@@ -1,9 +1,14 @@
-.list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--space-6);
+.masonry {
+  display: flex;
+  margin-left: calc(-1 * var(--space-6));
+  width: auto;
 }
 
-.list li {
-  display: flex;
+.masonryColumn {
+  padding-left: var(--space-6);
+  background-clip: padding-box;
+}
+
+.masonryColumn > * {
+  margin-bottom: var(--space-6);
 }

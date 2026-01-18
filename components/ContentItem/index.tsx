@@ -5,30 +5,36 @@ import styles from "./styles.module.css";
 import { formatRelativeDate } from "@/lib/utils";
 import type { ContentItemProps } from "./types";
 import { Typography, TypographyVariant } from "../Typography";
+import { ContentType } from "@/types";
 import { clsx } from "clsx";
 
 export function ContentItem({
   path,
   title,
+  contentType,
   description,
   image,
   updated,
   topics,
 }: ContentItemProps) {
+  const isNote = contentType === ContentType.Note;
+
   return (
-    <Link href={path} className={styles.item}>
-      <div className={styles.imageWrapper}>
-        {image ? (
-          <Image
-            src={image}
-            alt=""
-            fill
-            className={styles.image}
-          />
-        ) : (
-          <div className={styles.placeholder} />
-        )}
-      </div>
+    <Link href={path} className={clsx(styles.item, isNote && styles.note)}>
+      {!isNote && (
+        <div className={styles.imageWrapper}>
+          {image ? (
+            <Image
+              src={image}
+              alt=""
+              fill
+              className={styles.image}
+            />
+          ) : (
+            <div className={styles.placeholder} />
+          )}
+        </div>
+      )}
       <div className={styles.content}>
         <Typography variant={TypographyVariant.H3} className={styles.title}>
           {title}

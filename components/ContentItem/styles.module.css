@@ -68,3 +68,7 @@
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+.note {
+  border-left: 3px solid var(--color-primary);
+}
