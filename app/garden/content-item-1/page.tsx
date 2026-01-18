@@ -12,9 +12,10 @@ export const contentMetadata = {
   type: ContentType.Note,
   created: "01-09-2025",
   updated: "01-15-2026",
-  topics: [Topic.DesignSystems, Topic.ReactComponents, Topic.TokenArchitecture],
+  topics: [Topic.DesignSystems, Topic.React, Topic.Tokens],
   links: ["content-item-2", "content-item-3", "content-item-4"],
-  description: "A temporary page for testing content layout.",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
 };
 
 export default function ContentItem1() {

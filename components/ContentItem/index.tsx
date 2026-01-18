@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { TopicList } from "../TopicList";
 import styles from "./styles.module.css";
@@ -10,22 +11,37 @@ export function ContentItem({
   path,
   title,
   description,
+  image,
   updated,
   topics,
 }: ContentItemProps) {
   return (
     <Link href={path} className={styles.item}>
-      <Typography variant={TypographyVariant.H3} className={styles.title}>
-        {title}
-      </Typography>
-      {description && (
-        <Typography variant={TypographyVariant.Small}>{description}</Typography>
-      )}
-      <div className={clsx(styles.meta, "text-muted", "text-sm")}>
-        <span>{formatRelativeDate(updated)}</span>
-        {topics && topics.length > 0 && (
-          <TopicList topics={topics} limit={3} className={styles.topics} />
+      <div className={styles.imageWrapper}>
+        {image ? (
+          <Image
+            src={image}
+            alt=""
+            fill
+            className={styles.image}
+          />
+        ) : (
+          <div className={styles.placeholder} />
         )}
+      </div>
+      <div className={styles.content}>
+        <Typography variant={TypographyVariant.H3} className={styles.title}>
+          {title}
+        </Typography>
+        {description && (
+          <Typography variant={TypographyVariant.Small}>{description}</Typography>
+        )}
+        <div className={clsx(styles.meta, "text-muted", "text-sm")}>
+          <span>{formatRelativeDate(updated)}</span>
+          {topics && topics.length > 0 && (
+            <TopicList topics={topics} limit={3} className={styles.topics} />
+          )}
+        </div>
       </div>
     </Link>
   );

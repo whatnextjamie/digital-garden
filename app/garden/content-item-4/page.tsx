@@ -14,7 +14,7 @@ export const contentMetadata = {
   updated: "03-15-2025",
   topics: [Topic.Claude, Topic.DevTools, Topic.LLMs],
   links: ["content-item-1", "content-item-2", "content-item-3"],
-  description: "A temporary page for testing content layout.",
+  description: "A temporary page for testing layout.",
 };
 
 export default function ContentItem4() {

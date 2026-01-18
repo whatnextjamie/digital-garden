@@ -13,7 +13,7 @@ export const contentMetadata = {
   created: "01-09-2025",
   updated: "01-16-2026",
   topics: [
-    Topic.DeveloperExperience,
+    Topic.DX,
     Topic.IntentShift,
     Topic.CostAwareAIUX,
     Topic.PromptEngineering,

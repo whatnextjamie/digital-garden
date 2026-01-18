@@ -16,7 +16,7 @@ export const Topic = {
   CostAwareAIUX: "Cost-Aware AI UX",
   Claude: "Claude",
   Dashboards: "Dashboards",
-  DeveloperExperience: "Developer Experience",
+  DX: "DX",
   Documentation: "Documentation",
   GenerativeAI: "Generative AI",
   LLMs: "LLMs",
@@ -24,8 +24,8 @@ export const Topic = {
   MultimodalAI: "Multimodal AI",
   PromptEngineering: "Prompt Engineering",
   ResponsibleAI: "Responsible AI",
-  TokenArchitecture: "Token Architecture",
-  ReactComponents: "React Components",
+  Tokens: "Tokens",
+  React: "React",
   ModernCSS: "Modern CSS",
 } as const;
 
