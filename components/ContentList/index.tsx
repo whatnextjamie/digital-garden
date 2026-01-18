@@ -26,6 +26,7 @@ export function ContentList({ items }: ContentListProps) {
           title={item.title}
           contentType={item.type}
           description={item.description}
+          image={item.image}
           updated={item.updated}
           topics={item.topics}
         />

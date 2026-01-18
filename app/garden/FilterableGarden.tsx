@@ -23,15 +23,13 @@ export function FilterableGarden({ topics, content }: FilterableGardenProps) {
   };
 
   const filteredContent = selectedTopic
-    ? content.filter((item) =>
-        item.topics.includes(selectedTopic as Topic)
-      )
+    ? content.filter((item) => item.topics.includes(selectedTopic as Topic))
     : content;
 
   return (
     <>
       <section className={styles.section}>
-        <Typography variant={TypographyVariant.Label}>Topics</Typography>
+        <Typography variant={TypographyVariant.Label} className={styles.label}>Topics</Typography>
         <TopicList
           topics={topics}
           size="md"
@@ -42,7 +40,7 @@ export function FilterableGarden({ topics, content }: FilterableGardenProps) {
       </section>
 
       <section className={styles.section}>
-        <Typography variant={TypographyVariant.Label}>
+        <Typography variant={TypographyVariant.Label} className={styles.label}>
           {selectedTopic ? `${selectedTopic}` : "All Content"}
         </Typography>
         <ContentList items={filteredContent} />

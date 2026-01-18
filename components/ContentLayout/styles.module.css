@@ -1,7 +1,29 @@
-.header {
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 21 / 9;
   margin-bottom: var(--space-8);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: var(--space-12);
 }
 
 .topics {
   margin-bottom: var(--space-4);
+}
+
+.updated {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-muted);
+}
+
+.title {
+  margin-bottom: var(--space-3);
+}
+
+.description {
+  color: var(--color-text-secondary);
 }

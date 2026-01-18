@@ -3,10 +3,20 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  padding: var(--space-4) 0;
+  padding: var(--space-6) var(--space-12);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-12);
 }
 
 .name {
-  font-weight: 600;
-  color: inherit;
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.name:hover {
+  color: var(--color-link-hover);
 }

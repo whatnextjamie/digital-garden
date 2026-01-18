@@ -40,6 +40,7 @@ export interface ContentMetadata {
   topics: Topic[];
   links: string[];
   description?: string;
+  image?: string;
   path: string;
 }
 

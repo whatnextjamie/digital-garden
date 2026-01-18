@@ -28,10 +28,10 @@ export function ContentItem({
               src={image}
               alt=""
               fill
-              className={styles.image}
+              className="content-image"
             />
           ) : (
-            <div className={styles.placeholder} />
+            <div className="content-placeholder" />
           )}
         </div>
       )}
