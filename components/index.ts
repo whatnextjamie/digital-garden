@@ -1,5 +1,5 @@
 export { BackLink } from "./BackLink";
-export { BacklinksList } from "./BacklinksList";
+export { BacklinkList } from "./BacklinkList";
 export { ContentLayout } from "./ContentLayout";
 export { ContentLink } from "./ContentLink";
 export { ContentList } from "./ContentList";

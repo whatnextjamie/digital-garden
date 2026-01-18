@@ -1,7 +1,9 @@
 import { ReactNode } from "react";
 
 export const TypographyVariant = {
-  Display: "display",
+  Display1: "display-1",
+  Display2: "display-2",
+  Display3: "display-3",
   H1: "h1",
   H2: "h2",
   H3: "h3",
@@ -40,7 +42,9 @@ export interface TypographyProps {
 }
 
 export const defaultElements: Record<TypographyVariant, TypographyElement> = {
-  [TypographyVariant.Display]: TypographyElement.H1,
+  [TypographyVariant.Display1]: TypographyElement.H1,
+  [TypographyVariant.Display2]: TypographyElement.H1,
+  [TypographyVariant.Display3]: TypographyElement.H1,
   [TypographyVariant.H1]: TypographyElement.H1,
   [TypographyVariant.H2]: TypographyElement.H2,
   [TypographyVariant.H3]: TypographyElement.H3,

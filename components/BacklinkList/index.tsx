@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { getBacklinks } from "@/lib/content-graph";
 import styles from "./styles.module.css";
-import type { BacklinksListProps } from "./types";
+import type { BacklinkListProps } from "./types";
 import { Typography, TypographyVariant } from "../Typography";
 
-export function BacklinksList({ contentId }: BacklinksListProps) {
+export function BacklinkList({ contentId }: BacklinkListProps) {
   const backlinks = getBacklinks(contentId);
 
   if (backlinks.length === 0) {
@@ -21,7 +21,10 @@ export function BacklinksList({ contentId }: BacklinksListProps) {
               {content.title}
             </Link>
             {content.description && (
-              <Typography variant={TypographyVariant.Body} className={styles.description}>
+              <Typography
+                variant={TypographyVariant.Body}
+                className={styles.description}
+              >
                 {content.description}
               </Typography>
             )}

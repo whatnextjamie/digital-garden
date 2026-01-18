@@ -1,4 +1,4 @@
-import { BacklinksList } from "@/components/BacklinksList";
+import { BacklinkList } from "@/components/BacklinkList";
 import {
   PageLayout,
   BackLink,
@@ -22,10 +22,7 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
           {content.topics.length > 0 && (
             <TopicList topics={content.topics} className={styles.topics} />
           )}
-          <Typography
-            variant={TypographyVariant.Body}
-            className="text-muted text-sm"
-          >
+          <Typography variant={TypographyVariant.Small}>
             Updated {content.updated}
           </Typography>
           <Typography variant={TypographyVariant.H1}>
@@ -39,7 +36,7 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
 
       <main>{children}</main>
 
-      <BacklinksList contentId={contentId} />
+      <BacklinkList contentId={contentId} />
     </PageLayout>
   );
 }

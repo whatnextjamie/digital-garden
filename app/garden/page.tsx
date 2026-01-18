@@ -16,11 +16,8 @@ export default function GardenPage() {
   return (
     <PageLayout>
       <header className={styles.header}>
-        <Typography
-          variant={TypographyVariant.Display}
-          className={styles.title}
-        >
-          Welcome to My Garden
+        <Typography variant={TypographyVariant.Display2}>
+          Welcome to my garden
         </Typography>
         <Typography variant={TypographyVariant.Lead}>
           A collection of interconnected notes and ideas. Click any item to

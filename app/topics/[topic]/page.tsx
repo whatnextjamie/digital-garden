@@ -1,5 +1,11 @@
 import { getContentByTopic, getContentGraph, Topic } from "@/lib/content-graph";
-import { PageLayout, BackLink, Typography, TypographyVariant, ContentList } from "@/components";
+import {
+  PageLayout,
+  BackLink,
+  Typography,
+  TypographyVariant,
+  ContentList,
+} from "@/components";
 import { pluralize } from "@/lib/utils";
 import styles from "./page.module.css";
 
@@ -23,7 +29,7 @@ export default async function TopicPage({
 
       <header className={styles.header}>
         <Typography variant={TypographyVariant.Label}>Topic</Typography>
-        <Typography variant={TypographyVariant.H1}>{topic}</Typography>
+        <Typography variant={TypographyVariant.Display3}>{topic}</Typography>
         <Typography variant={TypographyVariant.Body} className={styles.count}>
           {content.length} {pluralize(content.length, "item")}
         </Typography>
