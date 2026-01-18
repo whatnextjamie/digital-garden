@@ -3,6 +3,8 @@ export { BacklinksList } from "./BacklinksList";
 export { ContentLayout } from "./ContentLayout";
 export { ContentLink } from "./ContentLink";
 export { ContentList } from "./ContentList";
+export { ContentItem } from "./ContentItem";
 export { PageLayout } from "./PageLayout";
 export { Topic } from "./Topic";
+export { TopicList } from "./TopicList";
 export { Typography, TypographyVariant, TypographyElement } from "./Typography";

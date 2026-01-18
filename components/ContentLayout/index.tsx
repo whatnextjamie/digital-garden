@@ -2,7 +2,7 @@ import { BacklinksList } from "@/components/BacklinksList";
 import {
   PageLayout,
   BackLink,
-  Topic,
+  TopicList,
   Typography,
   TypographyVariant,
 } from "@/components";
@@ -20,22 +20,18 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
       {content && (
         <header className={styles.header}>
           {content.topics.length > 0 && (
-            <div className={styles.topics}>
-              {content.topics.map((topic) => (
-                <Topic key={topic}>{topic}</Topic>
-              ))}
-            </div>
+            <TopicList topics={content.topics} className={styles.topics} />
           )}
           <Typography
             variant={TypographyVariant.Body}
-            className={styles.updated}
+            className="text-muted text-sm"
           >
             Updated {content.updated}
           </Typography>
           <Typography variant={TypographyVariant.H1}>
             {content.title}
           </Typography>
-          <Typography variant={TypographyVariant.Subtitle}>
+          <Typography variant={TypographyVariant.Lead}>
             {content.description}
           </Typography>
         </header>

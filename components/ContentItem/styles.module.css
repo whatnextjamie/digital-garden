@@ -1,0 +1,7 @@
+.item:hover .title {
+  color: var(--color-link-hover);
+}
+
+.meta {
+  margin-top: var(--space-2);
+}

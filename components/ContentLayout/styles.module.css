@@ -3,11 +3,5 @@
 }
 
 .topics {
-  composes: row row-2 flex-wrap from global;
   margin-bottom: var(--space-4);
-}
-
-.updated {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
 }

@@ -1,24 +1,5 @@
 .list {
-  composes: list-reset stack stack-6 from global;
-}
-
-.link {
-  display: block;
-  color: inherit;
-}
-
-.link:hover .title {
-  color: var(--color-link-hover);
-}
-
-.meta {
-  composes: row row-4 from global;
-  align-items: center;
-  margin-top: var(--space-2);
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-}
-
-.topics {
-  composes: row row-1 from global;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-6);
 }

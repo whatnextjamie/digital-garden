@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-12);
 }
 
 .title {
@@ -8,8 +8,4 @@
 
 .section {
   margin-bottom: var(--space-16);
-}
-
-.topicsList {
-  composes: row row-2 flex-wrap from global;
 }

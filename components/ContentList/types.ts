@@ -1,13 +1,5 @@
-export interface ContentItem {
-  id: string;
-  path: string;
-  title: string;
-  description?: string;
-  updated: string;
-  topics?: string[];
-}
+import type { ContentItemProps } from "../ContentItem/types";
 
 export interface ContentListProps {
-  items: ContentItem[];
-  showTopics?: boolean;
+  items: ContentItemProps[];
 }
