@@ -1,5 +1,7 @@
-.page {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: var(--content-padding);
+.header {
+  margin-bottom: var(--space-12);
+}
+
+.title {
+  margin-bottom: var(--space-4);
 }

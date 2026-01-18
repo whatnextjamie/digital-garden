@@ -1,5 +1,9 @@
 import { ReactNode } from "react";
+import { TypographyVariant } from "@/components/Typography";
 
 export interface PageLayoutProps {
-  children: ReactNode;
+  title: string;
+  description: string;
+  titleVariant: TypographyVariant;
+  children?: ReactNode;
 }

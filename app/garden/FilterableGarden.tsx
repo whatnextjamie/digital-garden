@@ -29,7 +29,9 @@ export function FilterableGarden({ topics, content }: FilterableGardenProps) {
   return (
     <>
       <section className={styles.section}>
-        <Typography variant={TypographyVariant.Label} className={styles.label}>Topics</Typography>
+        <Typography variant={TypographyVariant.Label} className={styles.label}>
+          Topics
+        </Typography>
         <TopicList
           topics={topics}
           size="md"

@@ -17,18 +17,13 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
   const isNote = content?.type === ContentType.Note;
 
   return (
-    <PageLayout>
+    <div>
       <BackLink />
 
       {content && !isNote && (
         <div className={styles.imageWrapper}>
           {content.image ? (
-            <Image
-              src={content.image}
-              alt=""
-              fill
-              className="content-image"
-            />
+            <Image src={content.image} alt="" fill className="content-image" />
           ) : (
             <div className="content-placeholder" />
           )}
@@ -49,15 +44,18 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
           <Typography variant={TypographyVariant.H1} className={styles.title}>
             {content.title}
           </Typography>
-          <Typography variant={TypographyVariant.Lead} className={styles.description}>
+          <Typography
+            variant={TypographyVariant.Lead}
+            className={styles.description}
+          >
             {content.description}
           </Typography>
         </header>
       )}
 
-      <main>{children}</main>
+      <div>{children}</div>
 
       <BacklinkList contentId={contentId} />
-    </PageLayout>
+    </div>
   );
 }

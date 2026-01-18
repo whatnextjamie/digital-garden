@@ -11,26 +11,32 @@ const breakpointColumns = {
   700: 1,
 };
 
-export function ContentList({ items }: ContentListProps) {
+export function ContentList({ items, layout = "masonry" }: ContentListProps) {
+  const content = items.map((item) => (
+    <ContentItem
+      key={item.id}
+      id={item.id}
+      path={item.path}
+      title={item.title}
+      contentType={item.type}
+      description={item.description}
+      image={item.image}
+      updated={item.updated}
+      topics={item.topics}
+    />
+  ));
+
+  if (layout === "grid") {
+    return <div className={styles.grid}>{content}</div>;
+  }
+
   return (
     <Masonry
       breakpointCols={breakpointColumns}
       className={styles.masonry}
       columnClassName={styles.masonryColumn}
     >
-      {items.map((item) => (
-        <ContentItem
-          key={item.id}
-          id={item.id}
-          path={item.path}
-          title={item.title}
-          contentType={item.type}
-          description={item.description}
-          image={item.image}
-          updated={item.updated}
-          topics={item.topics}
-        />
-      ))}
+      {content}
     </Masonry>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Frank_Ruhl_Libre, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
 import { Header } from "@/components/Header";
 
 const frankRuhlLibre = Frank_Ruhl_Libre({
@@ -35,7 +36,7 @@ export default function RootLayout({
     >
       <body>
         <Header />
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
       </body>
     </html>
   );

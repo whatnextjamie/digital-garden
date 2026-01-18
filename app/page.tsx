@@ -1,16 +1,25 @@
 import { PageLayout, ContentList } from "@/components";
 import { Typography, TypographyVariant } from "@/components/Typography";
 import { getFeaturedContent } from "@/lib/content-graph";
+import styles from "./page.module.css";
 
 export default function Home() {
   const featuredContent = getFeaturedContent();
 
   return (
-    <PageLayout>
-      <Typography variant={TypographyVariant.Display1}>
-        Jamie solves complex design problems with engineering skills
-      </Typography>
-      {featuredContent.length > 0 && <ContentList items={featuredContent} />}
+    <PageLayout
+      title="Jamie solves complex design problems with engineering skills"
+      description="The modern creative landscape demands more than talent alone — it thrives on curiosity and persistence. Every project, whether large or small, begins with a single idea that grows through thoughtful iteration."
+      titleVariant={TypographyVariant.Display1}
+    >
+      <section className={styles.section}>
+        <Typography variant={TypographyVariant.Label} className={styles.label}>
+          From the garden
+        </Typography>
+        {featuredContent.length > 0 && (
+          <ContentList items={featuredContent} layout="grid" />
+        )}
+      </section>
     </PageLayout>
   );
 }
