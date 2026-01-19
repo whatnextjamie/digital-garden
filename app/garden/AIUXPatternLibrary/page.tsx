@@ -7,26 +7,20 @@ import {
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
-  id: "content-item-3",
-  title: "Content Item 3",
+  id: "ai-ux-pattern-library",
+  title: "AI UX Pattern Library",
   type: ContentType.CaseStudy,
-  created: "01-09-2025",
-  updated: "01-16-2026",
-  topics: [
-    Topic.DX,
-    Topic.IntentShift,
-    Topic.CostAwareAIUX,
-    Topic.PromptEngineering,
-    Topic.Claude,
-  ],
+  created: "01-18-2026",
+  updated: "01-18-2026",
+  topics: [Topic.AIUXPatterns],
   links: ["content-item-1", "content-item-2", "content-item-4"],
   description: "A temporary page for testing content layout.",
   isFeatured: true,
 };
 
-export default function ContentItem3() {
+export default function AIUXPatternLibrary() {
   return (
-    <ContentLayout contentId="content-item-3">
+    <ContentLayout contentId="ai-ux-pattern-library">
       <Typography variant={TypographyVariant.Body}>
         The modern creative landscape demands more than talent alone — it
         thrives <ContentLink to="content-item-1">Content Item 1</ContentLink> on

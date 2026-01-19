@@ -7,20 +7,21 @@ import {
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
-  id: "content-item-1",
-  title: "Content Item 1",
-  type: ContentType.Note,
-  created: "01-09-2025",
-  updated: "01-15-2026",
-  topics: [Topic.DesignSystems, Topic.React, Topic.Tokens],
+  id: "from-action-to-intent",
+  title:
+    "From Action to Intent — Rethinking Interaction Design for AI Products",
+  type: ContentType.CaseStudy,
+  created: "01-18-2026",
+  updated: "01-18-2026",
+  topics: [Topic.IntentShift],
   links: ["content-item-2", "content-item-3", "content-item-4"],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
 };
 
-export default function ContentItem1() {
+export default function FromActionToIntent() {
   return (
-    <ContentLayout contentId="content-item-1">
+    <ContentLayout contentId="from-action-to-intent">
       <Typography variant={TypographyVariant.Body}>
         The modern creative landscape demands more than talent alone — it
         thrives on curiosity and persistence. Every project, big or small,

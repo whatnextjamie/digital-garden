@@ -7,19 +7,19 @@ import {
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
-  id: "content-item-4",
-  title: "Content Item 4",
+  id: "styling-react-components",
+  title: "Styling React Components",
   type: ContentType.Note,
-  created: "01-09-2025",
-  updated: "03-15-2025",
-  topics: [Topic.Claude, Topic.DevTools, Topic.LLMs],
+  created: "01-18-2026",
+  updated: "01-18-2026",
+  topics: [Topic.React],
   links: ["content-item-1", "content-item-2", "content-item-3"],
   description: "A temporary page for testing layout.",
 };
 
-export default function ContentItem4() {
+export default function StylingReactComponents() {
   return (
-    <ContentLayout contentId="content-item-4">
+    <ContentLayout contentId="styling-react-components">
       <Typography variant={TypographyVariant.Body}>
         The modern creative landscape demands more than talent alone — it
         thrives on curiosity and persistence. Every project, big or small,

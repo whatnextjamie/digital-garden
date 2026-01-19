@@ -7,20 +7,20 @@ import {
 import { ContentType, Topic } from "@/types";
 
 export const contentMetadata = {
-  id: "content-item-2",
-  title: "Content Item 2",
-  type: ContentType.Essay,
-  created: "01-09-2025",
-  updated: "01-05-2026",
-  topics: [Topic.CostAwareAIUX, Topic.ResponsibleAI, Topic.GenerativeAI],
+  id: "evolution-of-ux-patterns-in-developer-tools",
+  title: "Evolution of UX Patterns in Developer Tools",
+  type: ContentType.CaseStudy,
+  created: "01-18-2026",
+  updated: "01-18-2026",
+  topics: [Topic.DevTools, Topic.DX],
   links: ["content-item-1", "content-item-3", "content-item-4"],
   description: "A temporary page for testing content layout.",
   isFeatured: true,
 };
 
-export default function ContentItem2() {
+export default function EvolutionInDeveloperTools() {
   return (
-    <ContentLayout contentId="content-item-2">
+    <ContentLayout contentId="evolution-in-developer-tools">
       <Typography variant={TypographyVariant.Body}>
         The modern creative landscape demands more than talent alone — it
         thrives on curiosity and persistence. Every project, big or small,
