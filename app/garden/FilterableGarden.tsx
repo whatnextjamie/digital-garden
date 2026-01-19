@@ -43,7 +43,7 @@ export function FilterableGarden({ topics, content }: FilterableGardenProps) {
 
       <section className={styles.section}>
         <Typography variant={TypographyVariant.Label} className={styles.label}>
-          {selectedTopic ? `${selectedTopic}` : "All Content"}
+          {selectedTopic ? `${selectedTopic}` : "All Topics"}
         </Typography>
         <ContentList items={filteredContent} />
       </section>

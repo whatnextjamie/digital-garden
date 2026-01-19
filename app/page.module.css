@@ -2,7 +2,13 @@
   margin-bottom: var(--space-16);
 }
 
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-3);
+}
+
 .label {
   display: block;
-  margin-bottom: var(--space-3);
 }

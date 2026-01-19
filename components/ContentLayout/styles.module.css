@@ -1,3 +1,7 @@
+.backLink {
+  margin-bottom: var(--space-12);
+}
+
 .imageWrapper {
   position: relative;
   aspect-ratio: 21 / 9;

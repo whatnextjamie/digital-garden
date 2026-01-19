@@ -1,4 +1,4 @@
-export { BackLink } from "./BackLink";
+export { ArrowLink } from "./ArrowLink";
 export { BacklinkList } from "./BacklinkList";
 export { ContentLayout } from "./ContentLayout";
 export { ContentLink } from "./ContentLink";

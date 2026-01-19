@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BacklinkList } from "@/components/BacklinkList";
 import {
   PageLayout,
-  BackLink,
+  ArrowLink,
   TopicList,
   Typography,
   TypographyVariant,
@@ -18,7 +18,7 @@ export function ContentLayout({ contentId, children }: ContentLayoutProps) {
 
   return (
     <div>
-      <BackLink />
+      <ArrowLink direction="left" className={styles.backLink} />
 
       {content && !isNote && (
         <div className={styles.imageWrapper}>

@@ -1,4 +1,4 @@
-import { PageLayout, ContentList } from "@/components";
+import { PageLayout, ContentList, ArrowLink } from "@/components";
 import { Typography, TypographyVariant } from "@/components/Typography";
 import { getFeaturedContent } from "@/lib/content-graph";
 import styles from "./page.module.css";
@@ -13,9 +13,15 @@ export default function Home() {
       titleVariant={TypographyVariant.Display1}
     >
       <section className={styles.section}>
-        <Typography variant={TypographyVariant.Label} className={styles.label}>
-          From the garden
-        </Typography>
+        <div className={styles.sectionHeader}>
+          <Typography
+            variant={TypographyVariant.Label}
+            className={styles.label}
+          >
+            Featured Work
+          </Typography>
+          <ArrowLink direction="right" />
+        </div>
         {featuredContent.length > 0 && (
           <ContentList items={featuredContent} layout="grid" />
         )}
