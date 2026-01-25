@@ -9,7 +9,7 @@ export function ArrowLink({
   children,
 }: ArrowLinkProps) {
   const isBack = direction === "left";
-  const text = children ?? (isBack ? "Back to garden" : "More in garden");
+  const text = children ?? (isBack ? "Back to garden" : "More in the garden");
 
   return (
     <nav className={className}>

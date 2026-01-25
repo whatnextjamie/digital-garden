@@ -1,8 +1,9 @@
 export const ContentType = {
-  Note: "note",
-  CaseStudy: "case-study",
-  Experiment: "experiment",
-  Essay: "essay",
+  Note: "Note",
+  CaseStudy: "Case Study",
+  Project: "Project",
+  Experiment: "Experiment",
+  Essay: "Essay",
 } as const;
 
 export type ContentType = (typeof ContentType)[keyof typeof ContentType];

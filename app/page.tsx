@@ -8,8 +8,8 @@ export default function Home() {
 
   return (
     <PageLayout
-      title="Jamie solves complex design problems with engineering skills"
-      description="The modern creative landscape demands more than talent alone — it thrives on curiosity and persistence. Every project, whether large or small, begins with a single idea that grows through thoughtful iteration."
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
       titleVariant={TypographyVariant.Display1}
     >
       <section className={styles.section}>

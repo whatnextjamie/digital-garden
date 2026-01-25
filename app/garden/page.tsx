@@ -10,7 +10,9 @@ export default function GardenPage() {
   return (
     <PageLayout
       title="Welcome to my garden"
-      description="Design, like storytelling, rewards patience. The process may feel uncertain at times, but exploration is where the best work begins. A blank canvas, a first draft, an empty room — all hold potential waiting to be shaped."
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies
+        sed, dolor."
       titleVariant={TypographyVariant.Display2}
     >
       <FilterableGarden topics={allTopics} content={content} />

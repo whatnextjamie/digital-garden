@@ -24,23 +24,21 @@ export function ContentItem({
       {!isNote && (
         <div className={styles.imageWrapper}>
           {image ? (
-            <Image
-              src={image}
-              alt=""
-              fill
-              className="content-image"
-            />
+            <Image src={image} alt="" fill className="content-image" />
           ) : (
             <div className="content-placeholder" />
           )}
         </div>
       )}
       <div className={styles.content}>
+        <span className="text-sm">{contentType}</span>
         <Typography variant={TypographyVariant.H3} className={styles.title}>
           {title}
         </Typography>
         {description && (
-          <Typography variant={TypographyVariant.Small}>{description}</Typography>
+          <Typography variant={TypographyVariant.Small}>
+            {description}
+          </Typography>
         )}
         <div className={clsx(styles.meta, "text-muted", "text-sm")}>
           <span>{formatRelativeDate(updated)}</span>
